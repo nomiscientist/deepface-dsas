@@ -7,12 +7,23 @@
   "files.autoSave": "afterDelay",
   "python.analysis.typeCheckingMode": "basic",
   "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length=100"],
+  "python.formatting.blackArgs": [
+    "--line-length=100"
+  ],
   "editor.fontWeight": "normal",
   "python.analysis.extraPaths": [
     "./deepface"
   ],
   "black-formatter.args": [
     "--line-length=100"
-  ]
+  ],
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }

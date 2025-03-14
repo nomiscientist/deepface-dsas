@@ -18,3 +18,5 @@ benchmarks/outputs
 benchmarks/dataset
 benchmarks/lfwe
 venv
+config.bat
+node_modules
